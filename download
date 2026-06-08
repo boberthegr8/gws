@@ -1,0 +1,37 @@
+# ─────────────────────────────────────────────────────────────
+# GWS — Great White Streams :: Environment variables
+# Copy this file to ".env" and fill in your real values.
+# ─────────────────────────────────────────────────────────────
+
+# Database. SQLite for local dev (works out of the box).
+# For Vercel/production, swap to a hosted Postgres URL (see README).
+DATABASE_URL="file:./prisma/dev.db"
+
+# Admin login password for the /admin dashboard.
+ADMIN_PASSWORD="change-me-to-something-strong"
+
+# Secret used to sign the admin session cookie (any long random string).
+SESSION_SECRET="change-me-to-a-long-random-string"
+
+# Where contact + trial requests are emailed.
+CONTACT_EMAIL="you@example.com"
+
+# Email delivery via Resend (https://resend.com). Optional.
+# If left blank, messages are still saved to the admin dashboard,
+# they just won't be emailed out.
+RESEND_API_KEY=""
+RESEND_FROM="GWS <onboarding@resend.dev>"
+
+# ── Pure Vision updates via Telegram ──────────────────────────
+# Create a bot with @BotFather, add it to your channel as admin,
+# then put the token + channel here. Channel can be @publicname
+# or a numeric -100... id for private channels.
+TELEGRAM_BOT_TOKEN=""
+TELEGRAM_PUREVISION_CHAT="@yourpurevisionchannel"
+
+# Public-facing Telegram chat link (shown as a button on the site).
+NEXT_PUBLIC_TELEGRAM_CHAT_URL="https://t.me/yourchat"
+
+# ── Hush updates ──────────────────────────────────────────────
+# Hush updates arrive via the "Circle" app, which has no public API,
+# so they are posted manually from the admin dashboard. No key needed.
