@@ -43,27 +43,31 @@ window.FIRESTICK_APPS = [
     category: "Streaming App",
     badge: "MEDIA",
     recommended: false,
-    code: "9378234",
+    code: "8878594",
     downloadUrl: "",
     description: "Stremio media app for Firestick and Android TV installations.",
     notes: [
-      "Downloader code: 9378234.",
+      "Downloader code: 8878594.",
       "Install Stremio, then sign in with the customer's own Stremio account.",
       "Only add sources or services the customer is authorized to access."
     ]
   },
   {
-    id: "slot-4",
-    enabled: false,
-    name: "App Slot 4",
-    shortName: "4",
-    category: "Other",
-    badge: "",
+    id: "waveo",
+    enabled: true,
+    name: "Waveo",
+    shortName: "W",
+    category: "IPTV Player",
+    badge: "ALTERNATE",
     recommended: false,
-    code: "",
+    code: "9378234",
     downloadUrl: "",
-    description: "Reserved app slot.",
-    notes: []
+    description: "Alternate IPTV player option for Firestick and Android TV installations.",
+    notes: [
+      "Downloader code: 9378234.",
+      "Verify the customer's login details before handing the device back.",
+      "Use only authorized service credentials."
+    ]
   },
   {
     id: "slot-5",
