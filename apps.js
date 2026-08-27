@@ -25,31 +25,31 @@ window.FIRESTICK_APPS = [
     category: "IPTV Player",
     badge: "RECOMMENDED XC",
     recommended: true,
-    code: "",
+    code: "1124386",
     downloadUrl: "",
     description: "Reliable Xtream Codes option when you need a straightforward username/password/server login.",
     notes: [
+      "Downloader code: 1124386.",
       "Server / DNS: https://ottipdns.com",
       "Use the customer's Xtream username and password.",
-      "To recover an existing Hush login: Settings → Playlists → Hush → Xtream Codes Parameters.",
-      "Add the Downloader code or APK URL here once finalized."
+      "To recover an existing Hush login: Settings → Playlists → Hush → Xtream Codes Parameters."
     ]
   },
   {
-    id: "waveo",
+    id: "stremio",
     enabled: true,
-    name: "Waveo",
-    shortName: "W",
-    category: "IPTV Player",
-    badge: "ALTERNATE",
+    name: "Stremio",
+    shortName: "ST",
+    category: "Streaming App",
+    badge: "MEDIA",
     recommended: false,
     code: "9378234",
     downloadUrl: "",
-    description: "Alternate TV player kept in the hub for installs where it fits the customer's login flow.",
+    description: "Stremio media app for Firestick and Android TV installations.",
     notes: [
       "Downloader code: 9378234.",
-      "If the required custom/server login fields are not available for that customer, use Hush-XC instead.",
-      "Verify the login screen before handing the device back to the customer."
+      "Install Stremio, then sign in with the customer's own Stremio account.",
+      "Only add sources or services the customer is authorized to access."
     ]
   },
   {
