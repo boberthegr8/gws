@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#07111f" />
+  <meta name="description" content="GWS Firestick Setup Hub — one place for apps, Downloader codes and setup instructions." />
+  <title>GWS Firestick Hub</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="GWS Firestick Hub home">
+      <span class="brand-mark">GWS</span>
+      <span class="brand-copy"><strong>Firestick Hub</strong><small>Apps • Codes • Setup</small></span>
+    </a>
+    <button id="ownerButton" class="owner-button hidden" type="button">Owner Tools</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="eyebrow">GREAT WHITE STREAMS</div>
+      <h1>One place for every<br><span>Firestick setup.</span></h1>
+      <p>Pick the app you need, enter its Downloader code, and follow the setup notes. No hunting through old messages.</p>
+      <div class="hero-actions">
+        <a class="primary-action" href="#apps">View Apps</a>
+        <button id="copyDnsButton" class="secondary-action" type="button">Copy Hush DNS</button>
+      </div>
+      <div class="quick-note">
+        <span class="pulse"></span>
+        <strong>Hush-XC login:</strong>&nbsp; use your Xtream username + password with <code>https://ottipdns.com</code>
+      </div>
+    </section>
+
+    <section class="steps" aria-label="Quick setup">
+      <article><span>01</span><div><strong>Open Downloader</strong><p>Launch Downloader on the Firestick.</p></div></article>
+      <article><span>02</span><div><strong>Enter the code</strong><p>Use the large code shown on the app card.</p></div></article>
+      <article><span>03</span><div><strong>Install & sign in</strong><p>Use the setup notes shown under that app.</p></div></article>
+    </section>
+
+    <section class="apps-section" id="apps">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow">APP LIBRARY</div>
+          <h2>Choose your setup</h2>
+        </div>
+        <label class="search-wrap">
+          <span>Search</span>
+          <input id="searchInput" type="search" placeholder="GWS, Hush, player…" autocomplete="off" />
+        </label>
+      </div>
+      <div id="filterBar" class="filter-bar"></div>
+      <div id="appGrid" class="app-grid" aria-live="polite"></div>
+      <div id="emptyState" class="empty-state hidden">No apps match that search.</div>
+    </section>
+
+    <section class="customer-help">
+      <div>
+        <div class="eyebrow">CUSTOMER HANDOFF</div>
+        <h2>Need the login from Hush?</h2>
+      </div>
+      <ol>
+        <li>Open <strong>Hush</strong>.</li>
+        <li>Go to <strong>Settings → Playlists → Hush</strong>.</li>
+        <li>Scroll to <strong>Xtream Codes Parameters</strong>.</li>
+        <li>Write down the <strong>username, password and expiration</strong>.</li>
+      </ol>
+    </section>
+
+    <section id="ownerPanel" class="owner-panel hidden">
+      <div>
+        <div class="eyebrow">OWNER MODE</div>
+        <h2>Manage the hub</h2>
+        <p>The public app list is controlled from one file. Edit it in GitHub, commit, and Vercel redeploys the hub.</p>
+      </div>
+      <div class="owner-actions">
+        <a href="https://github.com/boberthegr8/gws/edit/firestick-hub/apps.js" target="_blank" rel="noreferrer">Edit App List</a>
+        <a href="https://github.com/boberthegr8/gws/tree/firestick-hub" target="_blank" rel="noreferrer">Open Project</a>
+      </div>
+    </section>
+  </main>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <footer>
+    <span>GWS Firestick Hub</span>
+    <span>Use only apps and services you are authorized to access.</span>
+  </footer>
+
+  <script src="./apps.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
